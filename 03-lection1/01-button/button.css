@@ -1,49 +1,53 @@
 /* Стилизация кнопки */
 .button {
-    padding: 0px;
+    padding: 15px 15px 14px;
     border: none;
+    box-sizing: border-box;
     background-color: transparent;
+    border-radius: 8px;
     width: 189px;
     height: 48px;
-    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out;
 }
 .button_primary {
     background-color: #4263eb;
     color: var(--white);
-    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
 }
-.button_primary:hover:not(:disabled) {
+.button_primary:hover {
     background-color: var(--primary);
-    cursor: pointer;
 }
-.button_primary:active:not(:disabled) {
+.button_primary:active {
     background-color: #4263eb;
 }
 .button_secondary {
     background-color: var(--secondary);
     color: var(--white);
-    transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
 }
-.button_secondary:hover:not(:disabled) {
+.button_secondary:hover {
     background-color: #5028c6;
-    cursor: pointer;
 }
-.button_secondary:active:not(:disabled) {
+.button_secondary:active {
     background-color: var(--secondary);
 }
 .button_alternate {
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
-    transition: opacity 200ms ease-in-out, border-color 200ms ease-in-out;
 }
-.button_alternate:hover:not(:disabled) {
+.button_alternate:hover {
     border: 1px solid var(--black);
-    cursor: pointer;
 }
-.button_alternate:active:not(:disabled) {
+.button_alternate:active {
     border: 1px solid var(--grey-3);
 }
 .button:disabled {
     opacity: 0.5;
     cursor: default;
+    pointer-events: none;
 }
