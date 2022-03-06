@@ -19,6 +19,12 @@
     --secondary: var(--purple);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font-family: "Inter"; 
+    src: url("../fonts/Inter-V.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
 }
