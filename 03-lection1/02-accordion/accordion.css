@@ -1,13 +1,13 @@
 /* Стилизация аккордеона */
-.accordion * {
-    font-family: 'Inter';
+.accordion {
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
 }
 .accordion__item {
-    width: 730px;
+    max-width: 730px;
     padding: 0px;
     margin: 0px;
     margin-bottom: 8px;
@@ -19,24 +19,22 @@
 .accordion__item:last-child {
     margin-bottom: 0px;
 }
-.accordion__item__summary {
+.accordion__summary {
     padding: 24px 32px 24px;
     color: var(--black);
+    list-style: none;
 }
-.accordion__item__summary::-webkit-details-marker {
+.accordion__summary::-webkit-details-marker {
     display: none;
 }
-.accordion__item__content {
+.accordion__content {
     margin: 0px;
     padding: 16px 32px 32px;
     color: var(--grey-4);
 }
-details .accordion__item__summary {
-    list-style: none;
-}
-details[open] .accordion__item__summary {
+.accordion__details[open] .accordion__summary {
     padding-bottom: 0px;
 }
-details[open] .accordion__item__summary img {
+.accordion__details[open] .accordion__arrow {
     transform: rotate(180deg);
 }
