@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 354px;
-    min-width: 160px;
+    width: 354px;
     height: 185px;
+    padding: 16px 24px 24px 24px;
     background-color: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
@@ -16,26 +16,25 @@
     line-height: 24px;
     color: var(--black);
 }
-.gistogram__info {
+.gistogram__header {
     display: flex;
     justify-content: space-between;
-    margin: 16px 24px 0;
 }
-.gistogram__info_section-2 {
+.gistogram__header-section-link {
     padding-top: 3px;
 }
-.gistogram__info_title {
+.gistogram__header-title {
     opacity: 0.8;
 }
-.gistogram__info_total {
+.gistogram__header-orders {
     font-size: 20px;
     line-height: 26px;
     margin-top: 6px;
 }
-.gistogram__info_details {
+.gistogram__header-link-text {
     text-align: right;
 }
-.gistogram__info-link {
+.gistogram__header-link {
     text-decoration: none;
     color: var(--blue-1);
 }
@@ -45,25 +44,24 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 1px;
-    margin: 0px 24px 24px;
 }
-.gistogram__chart-section {
+.gistogram__chart-column {
     flex-grow: 1;
     writing-mode: vertical-rl;
     background-color: var(--blue-1);
 }
-.gistogram__chart-section_100 {
+.gistogram__chart-column_100 {
     inline-size: 100%;
 }
-.gistogram__chart-section_70 {
+.gistogram__chart-column_70 {
     inline-size: 70%;
 }
-.gistogram__chart-section_50 {
+.gistogram__chart-column_50 {
     inline-size: 50%;
 }
-.gistogram__chart-section_30 {
+.gistogram__chart-column_30 {
     inline-size: 30%;
 }
-.gistogram__chart-section_18 {
+.gistogram__chart-column_18 {
     inline-size: 18%;
 }
