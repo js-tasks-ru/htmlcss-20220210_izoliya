@@ -18,21 +18,19 @@
     display: flex;
     justify-content: space-between;
 }
-.gistogram__header-section-link {
+.gistogram__header-link {
     padding-top: 3px;
+    text-align: right;
 }
-.gistogram__header-title {
+.gistogram__title {
     opacity: 0.8;
 }
-.gistogram__header-orders {
+.gistogram__orders {
     font-size: 20px;
     line-height: 26px;
     margin-top: 6px;
 }
-.gistogram__header-link-text {
-    text-align: right;
-}
-.gistogram__header-link {
+.gistogram__link {
     text-decoration: none;
     color: var(--blue-1);
 }
