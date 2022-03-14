@@ -9,5 +9,5 @@
     flex-wrap: wrap;
 }
 .preview__inner-card {
-    width: calc(33.3333% - 30px);
+    width: 33.3333%;/*calc(33.3333% - 30px);*/
 } 
