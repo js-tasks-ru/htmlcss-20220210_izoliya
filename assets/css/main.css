@@ -28,3 +28,9 @@ body {
     font-style: normal; 
     font-weight: normal; 
 }
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
