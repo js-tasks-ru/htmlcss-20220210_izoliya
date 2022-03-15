@@ -1,5 +1,5 @@
 @import '../fonts/fonts.css';
-
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
 :root {
     --white: #ffffff;
     --black: #212429;
