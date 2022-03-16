@@ -1,9 +1,4 @@
-@import '../../03-lection1/01-button/button.css';
-
-p {
-    margin: 0;
-}
-.modal__window {
+.modal {
     display: none;
     position: absolute;
     top: 0;
@@ -14,7 +9,7 @@ p {
     z-index: 1000;
     transition: all 0.35s ease-out;
 }
-.modal {
+.modal__window {
     max-width: 428px;
     background: var(--white);
     box-sizing: border-box;
@@ -51,4 +46,7 @@ p {
     font-size: 16px;
     line-height: 24px;
     color: var(--grey-4);
+}
+.modal__text {
+    margin: 0;
 }
