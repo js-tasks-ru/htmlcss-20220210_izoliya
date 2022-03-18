@@ -1,0 +1,63 @@
+.gistogram {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px 24px 24px 24px;
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+.gistogram__header {
+    display: flex;
+    justify-content: space-between;
+}
+.gistogram__header-link {
+    padding-top: 3px;
+    text-align: right;
+}
+.gistogram__title {
+    opacity: 0.8;
+}
+.gistogram__orders {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 6px;
+}
+.gistogram__link {
+    text-decoration: none;
+    color: var(--blue-1);
+}
+.gistogram__chart {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1px;
+}
+.gistogram__chart-column {
+    flex-grow: 1;
+    writing-mode: vertical-rl;
+    background-color: var(--blue-1);
+}
+.gistogram__chart-column_100 {
+    inline-size: 100%;
+}
+.gistogram__chart-column_70 {
+    inline-size: 70%;
+}
+.gistogram__chart-column_50 {
+    inline-size: 50%;
+}
+.gistogram__chart-column_30 {
+    inline-size: 30%;
+}
+.gistogram__chart-column_18 {
+    inline-size: 18%;
+}
