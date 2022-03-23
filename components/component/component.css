@@ -1,21 +1,35 @@
-.component {
-    width: 100%;
+.component-page {
+    padding: 0;
 }
-.component__window {
+.component-page__inner {
+    height: 100%;
+}
+.component__wrapper {
     background-color: var(--white);
     height: 100%;
     padding-top: 2rem;
+    box-sizing: border-box;
+}
+.component__menu{
+    display: none;
 }
 @media screen and (min-width: 768px) {
-    .component {
+    .component-page {
+        padding: 0 1.5rem;
+    }
+    .component-page__inner {
+        height: 100%;
         display: grid;
         grid-template-columns: auto 1fr;
         grid-column-gap: 3.5rem;
     }
     .component__menu {
+        display: block;
         width: 14rem;
     }
-    /*.component__window {
-        max-width: 825px;
-    }*/
+}
+@media screen and (min-width: 1280px) {
+    .component-page {
+        padding: 0;
+    }
 }

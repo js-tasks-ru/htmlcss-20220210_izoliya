@@ -11,12 +11,12 @@
     color: #212429;
     margin: 0;
 }
-.header_component {
+.header_component_description {
     background-color: transparent;
     padding: 1rem 0 1rem;
 }
 @media screen and (min-width: 768px) {
-    .header_component {
+    .header_component_description {
         background-color: transparent;
         padding: 2rem 0 2rem;
     }
