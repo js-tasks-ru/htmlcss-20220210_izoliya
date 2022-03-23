@@ -1,0 +1,21 @@
+.component {
+    width: 100%;
+}
+.component__window {
+    background-color: var(--white);
+    height: 100%;
+    padding-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .component {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column-gap: 3.5rem;
+    }
+    .component__menu {
+        width: 14rem;
+    }
+    /*.component__window {
+        max-width: 825px;
+    }*/
+}
