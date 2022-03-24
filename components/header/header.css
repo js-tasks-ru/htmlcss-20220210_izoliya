@@ -1,13 +1,23 @@
 .header {
     background-color: #fff;
-    padding: 96px 0 77px;
+    padding: 6rem 0 5rem;
 }
 .header__title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
+    font-size: 3.13rem;
+    line-height: 4rem;
     color: #212429;
     margin: 0;
+}
+.header_component_description {
+    background-color: transparent;
+    padding: 1rem 0 1rem;
+}
+@media screen and (min-width: 768px) {
+    .header_component_description {
+        background-color: transparent;
+        padding: 2rem 0 2rem;
+    }
 }
