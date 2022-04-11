@@ -52,3 +52,6 @@
     background: var(--grey-2);
     border-color: var(--grey-2);
 }
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
+    color: var(--grey-2);
+}
