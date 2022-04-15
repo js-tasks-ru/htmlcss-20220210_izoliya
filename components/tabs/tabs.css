@@ -1,0 +1,59 @@
+.tabs {
+    /*display: inline-flex;*/
+    position: relative;
+}
+.tabs__radio {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+.tabs__scroller {
+    background: var(--white);
+    border-bottom: 0.06em solid var(--grey-2);
+    box-sizing: border-box;
+}
+.tabs__menu {
+    display: inline-flex;
+}
+.tabs__label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--grey-3);
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3rem solid transparent;
+    box-sizing: border-box;
+    white-space: nowrap;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+.tabs__content {
+    padding-top: 1.3rem;
+}
+.tab__content_all {
+    display: none;
+}
+.tab__content_element {
+    display: none;
+}
+.tab__content_container {
+    display: none;
+}
+.tab__content_template {
+    display: none;
+}
+#all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
+#element-tab:checked ~ .tabs__scroller .tabs__label[for="element-tab"],
+#container-tab:checked ~ .tabs__scroller .tabs__label[for="container-tab"],
+#template-tab:checked ~ .tabs__scroller .tabs__label[for="template-tab"] {
+    color: var(--black);
+    border-bottom: 0.3rem solid var(--black);
+}
+#all-tab:checked ~ .tab__content_all,
+#element-tab:checked ~ .tab__content_element,
+#container-tab:checked ~ .tab__content_container,
+#template-tab:checked ~ .tab__content_template {
+   display: block;
+}

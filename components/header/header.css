@@ -1,14 +1,26 @@
 .header {
     background-color: #fff;
-    padding: 6rem 0 5rem;
+    padding: 1rem 0 2rem;
+}
+.container__header{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.header__logo {
+    align-self: center;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
 }
 .header__title {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
-    font-size: 3.13rem;
-    line-height: 4rem;
-    color: #212429;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+    color: var(--black-1);
     margin: 0;
 }
 .header_component_description {
@@ -20,4 +32,21 @@
         background-color: transparent;
         padding: 2rem 0 2rem;
     }
+}
+@media screen and (min-width: 1280px) {
+    .header {
+        padding-bottom: 2.5rem;
+    }
+    .container__header{
+        gap: 2.5rem;
+    }
+    .header__logo {
+        align-self: flex-start;
+    }
+    .header__title {
+        font-weight: 500;
+        font-size: 3.13rem;
+        line-height: 4rem;
+        color: var(--black);
+    }   
 }
