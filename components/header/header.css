@@ -2,7 +2,7 @@
     background-color: #fff;
     padding: 1rem 0 2rem;
 }
-.container__header{
+.header__content {
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -37,7 +37,7 @@
     .header {
         padding-bottom: 2.5rem;
     }
-    .container__header{
+    .header__content{
         gap: 2.5rem;
     }
     .header__logo {
