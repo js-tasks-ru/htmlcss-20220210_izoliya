@@ -1,9 +1,14 @@
 .preview {
     background-color: #F9FAFC;
-    padding: 68px 0 204px;
+    padding: 0px 0 12.75rem;
 }
 .preview__inner {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(10.25rem, 1fr));
+    grid-gap: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+    .preview__inner {
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    }
 }

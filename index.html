@@ -9,34 +9,74 @@
         <div class="page">
             <header class="header">
                 <div class="container">
-                    <h1 class="header__title">Reusable component library</h1>
+                    <div class="header__content">
+                        <div class="header__logo">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="30" height="30" fill="#212429"/>
+                            </svg>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#212429"/>
+                            </svg>
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L32 32H0V0Z" fill="#212429"/>
+                            </svg>
+                        </div>
+                        <h1 class="header__title">Reusable component library</h1>
+                    </div>
                 </div>
             </header>
             <main class="preview page__main">
-                <div class="container">
-                    <div class="preview__inner">
-                        <div class="card">
-                            <h2 class="card__title">Tooltip</h2>
+                <div class="tabs">
+                    <input class="tabs__radio" type="radio" id="all-tab" name="tabs" checked>
+                    <input class="tabs__radio" type="radio" id="element-tab" name="tabs">
+                    <input class="tabs__radio" type="radio" id="container-tab" name="tabs">
+                    <input class="tabs__radio" type="radio" id="template-tab" name="tabs">
+                    <div class="tabs__scroller">
+                        <div class="container">
+                            <div class="tabs__menu">
+                                <label class="tabs__label" for="all-tab">All components</label>
+                                <label class="tabs__label" for="element-tab">Elements</label>
+                                <label class="tabs__label" for="container-tab"> Containers</label>
+                                <label class="tabs__label" for="template-tab">Templates</label>
+                            </div>
                         </div>
-                        <div class="card">
-                            <h2 class="card__title">Custom form elements</h2>
+                    </div>
+                    <div class="tabs__content tab__content_all">
+                        <div class="container">
+                            <div class="preview__inner">
+                                <div class="card">
+                                    <h2 class="card__title">Tooltip</h2>
+                                </div>
+                                <div class="card">
+                                    <h2 class="card__title">Custom form elements</h2>
+                                </div>
+                                <div class="card">
+                                    <h2 class="card__title">Calendar</h2>
+                                </div>
+                                <div class="card">
+                                    <h2 class="card__title">Modal dialog</h2>
+                                </div>
+                                <div class="card">
+                                    <h2 class="card__title">Histogram</h2>
+                                </div>
+                                <div class="card">
+                                    <h2 class="card__title">Avatar</h2>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card">
-                            <h2 class="card__title">Calendar</h2>
-                        </div>
-                        <div class="card">
-                            <h2 class="card__title">Modal dialog</h2>
-                        </div>
-                        <div class="card">
-                            <h2 class="card__title">Histogram</h2>
-                        </div>
-                        <div class="card">
-                            <h2 class="card__title">Avatar</h2>
-                        </div>
+                    </div>
+                    <div class="tabs__content tab__content_element">
+
+                    </div>
+                    <div class="tabs__content tab__content_container">
+                        
+                    </div>
+                    <div class="tabs__content tab__content_template">
+                        
                     </div>
                 </div>
             </main>
-            <footer class="footer">
+            <footer class="footer footer_none">
                 <h1 class="footer__title">About</h1>
                 <p class="footer__text">This project is a collection of professionally designed, 
                     pre-built, fully responsive HTML snippets you can drop into your projects. 

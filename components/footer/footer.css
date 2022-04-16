@@ -8,25 +8,31 @@
     align-items: center;
     padding: 4.44rem 0 8.5rem;
 }
-.footer__title {
-    font-weight: 500;
-    font-size: 2.34rem;
-    line-height: 3rem;
-    margin: 0;
-}
-.footer__text {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-    margin: 0;
-    margin-top: 2rem;
-    max-width: 40rem;
+.footer_none {
+    display: none;
 }
 .footer_component_description {
     display: none;
 }
 @media screen and (min-width: 768px) {
+    .footer_none {
+        display: flex;
+    }
+    .footer__title {
+        font-weight: 500;
+        font-size: 2.34rem;
+        line-height: 3rem;
+        margin: 0;
+    }
+    .footer__text {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+        margin: 0;
+        margin-top: 2rem;
+        max-width: 40rem;
+    }
     .footer_component_description {
         display: flex;
         background-color: transparent;
