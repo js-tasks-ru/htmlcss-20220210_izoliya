@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- Шаблон страницы компонента -->
+<!-- Cтраницa avatar -->
 <html lang="ru">
     <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -56,8 +56,11 @@
                         </aside>
                         <section class="component-page__wrapper">
                             <div class="component-page__preview">
-                                <h1 class="component-page__title">Template title</h1>
-                                
+                                <h1 class="component-page__title component-page__title_wrapper">Avatar</h1>
+                                <div class="avatar avatar__preview_component">
+                                    <img src="../../06-lection4/01-avatar/public/avatar-200.jpg" 
+                                    class="avatar__image" alt="Аватар человека с фотоаппаратом">
+                                </div>
                             </div>
                             <div class="tabs">
                                 <input class="tabs__radio" type="radio" id="html-tab" name="tabs-component" checked>
@@ -72,7 +75,10 @@
                                     <div class="component-page__html-css">
                                         <pre class="component-page__pre">
                                         <code>
-
+&lt;div class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;../../06-lection4/01-avatar/public/avatar-200.jpg&quot; 
+    class=&quot;avatar__image&quot; alt=&quot;Аватар человека с фотоаппаратом&quot;&gt;
+&lt;/div&gt;
                                         </code></pre>
                                     </div>
                                 </div>
@@ -80,7 +86,21 @@
                                     <div class="component-page__html-css">
                                         <pre class="component-page__pre">
                                         <code>
-
+.avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.avatar__preview_component {
+    width: 10rem;
+    height: 10rem;
+}
                                         </code></pre>
                                     </div>
                                 </div>

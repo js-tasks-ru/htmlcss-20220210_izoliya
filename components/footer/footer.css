@@ -35,7 +35,7 @@
     }
     .footer_component_description {
         display: flex;
-        background-color: transparent;
+        background: var(--grey-5);
         padding: 2rem 0 3.5rem;
     }
     .footer__text_component_description {

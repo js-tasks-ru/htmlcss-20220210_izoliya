@@ -9,3 +9,7 @@
     height: 100%;
     object-fit: cover;
 }
+.avatar__preview_component {
+    width: 10rem;
+    height: 10rem;
+}
