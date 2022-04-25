@@ -37,6 +37,12 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.preload * {
+    -webkit-transition:  all 0s linear !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
 @font-face {
     font-family: "Inter"; 
     src: url("../fonts/Inter-V.ttf") format("truetype"); 
