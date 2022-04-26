@@ -16,6 +16,10 @@
     cursor: pointer;
     transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out;
 }
+.button:active {
+    transform: scale(0.98);
+    transition: transform 200ms ease-in-out;
+}
 .button_primary {
     background-color: #4263eb;
     color: var(--white);
