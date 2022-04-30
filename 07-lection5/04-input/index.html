@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
     </head>
-    <body>
+    <body class="preload">
         <span class="form-group">
             <label class="form-group__lable">
                 <div class="form-group__title">label</div>
@@ -52,5 +52,8 @@
                 </span>
             </label>
         </span>
+        <script>
+            document.querySelector('body').classList.remove ("preload");
+        </script>
     </body>
 </html>
