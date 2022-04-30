@@ -13,6 +13,7 @@
 
 :root {
     --white: #ffffff;
+    --white-1: #f9fafc;
     --black: #212429;
     --black-1: #495057;
     --pink: #F784AD;
@@ -35,6 +36,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+.preload * {
+    -webkit-transition:  all 0s linear !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 @font-face {
     font-family: "Inter"; 
