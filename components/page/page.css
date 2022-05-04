@@ -6,14 +6,14 @@
 .page__main {
     flex-grow: 1;
 }
-.page_component_description {
+/*.page_component_description {
     background-color: #F9FAFC;
     display: grid;
     grid-template-rows: auto 1fr;
-}
+}*/
 @media screen and (min-width: 768px) {
-    .page_component_description {
+    /*.page_component_description {
         grid-template-rows: auto 1fr auto;
         grid-row-gap: 2rem;
-    }
+    }*/
 }
