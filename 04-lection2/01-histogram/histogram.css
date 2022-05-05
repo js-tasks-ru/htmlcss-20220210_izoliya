@@ -40,6 +40,7 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 1px;
+    animation: appear 0.5s ease-out;
 }
 .gistogram__chart-column {
     flex-grow: 1;
@@ -60,4 +61,15 @@
 }
 .gistogram__chart-column_18 {
     inline-size: 18%;
+}
+
+@keyframes appear {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
 }
